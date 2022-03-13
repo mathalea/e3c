@@ -116,6 +116,30 @@ f(x) &  & \pmb{-} &  \vline\hspace{-2.7pt}{0} & \pmb{+} &   \\
 
 
 \end{enumerate}
+\begin{center}
+	\large \textbf{Figures (non demandées)}
+	\end{center}
+	
+	\bigskip	
+
+	
+	\begin{center}
+	\psset{xunit=1cm,yunit=0.2cm,labelFontSize=\scriptstyle}
+	\def\xmin {-6}   \def\xmax {4}
+	\def\ymin {-40}   \def\ymax {10}
+	\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+	%\psset{yMaxValue=\ymax,yMinValue=\ymin}
+	\psgrid[unit=1cm,subgriddiv=1,  gridlabels=0, gridcolor=lightgray](-6,-8)(4,2)
+	%\psaxes[linewidth=1.8pt]{->}(0,0)(1,1)[$\vec{\imath}$,d][$\vec{\jmath}$,180]
+	\psaxes[arrowsize=3pt 2, ticksize=-2pt 2pt,Dy=5]{->}(0,0)(-5.99,-39.99)(\xmax,\ymax) 
+	\uput[dl](0,0){O}
+	\psplot[linecolor=blue,plotpoints=5000]{\xmin}{\xmax}{x x x 7 add mul 11 add mul 19 sub}
+	\psplot[linecolor=red,plotpoints=5000]{\xmin}{\xmax}{x 11 mul 19 sub}
+	\psline[linecolor=blue,linestyle=dashed](-3.667,0)(-3.667,-14.5185)
+	\uput[u](-3.667,0){\blue $-\frac{11}{3}$}
+	\psline[linecolor=blue,linestyle=dashed](-1,0)(-1,-24)
+	\end{pspicture*}
+	\end{center}
 
 %\vspace{0.5cm}
 
