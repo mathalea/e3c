@@ -1,3 +1,5 @@
+Projet déménagé sur https://forge.aeif.fr/coopmaths/e3c
+
 # PROJET BAC APMEP
 
 ## Objectif
